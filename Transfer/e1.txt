@@ -59,81 +59,23 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-.primary-color ul{
-    background-color: #2ba6cb;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-
-    width: 80%;
-
-
-}
 * {
     margin: 0;
     padding: 0;
-}
-li{
-    list-style: none;
-}
-
-figure{
-    margin: 25px;
-    position: relative;
-
 }
 
 .secondary-color {
     background-color: #e9e9e9;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    width: 100%;
-    justify-content: flex-start;
-
-
-}
-
-figcaption{
-    position: absolute;
-    top: 0;
-
-    background-color: rgba(217, 248, 255, 0.44);
-    width: 200px;
-
-
-
-}
-h3{
-    margin: 8px 0 8px 8px;
-}
-
-
-.default  {
-    background-color: #ffae00;
-    width: 20%;
-    display: flex;
-    flex-wrap: wrap;
-
-    margin: 0;
-
-
-
-}
-
-.alert {
-    background-color: #c60f13;
 }
 
 header {
     background-image: url(http://via.placeholder.com/960x100/000?text=HeaderBGImage);
     background-position: center;
     display: block;
+    height: 100px;
     width: 100%;
-
-
-
 }
 
 header h1 {
@@ -146,16 +88,51 @@ header h1 {
     color: #e9e9e9;
 }
 
+.primary-color {
+    background-color: #2ba6cb;
+    width: 80%;
+    display: block;
+}
 
+ul{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    margin-bottom: 20px;
 
+}
 
+li{
+    list-style: none;
+    align-content: center;
+}
 
+figure{
+    display: block;
+    position: relative;
+    margin: 20px 20px 0 20px;
 
+}
 
+figcaption{
+    position: absolute;
+    top: 0;
+    background-color: rgba(217, 248, 255, 0.44);
+    width: 200px;
+}
+h3{
+    margin: 8px 0 8px 8px;
+}
 
+.default  {
+    background-color: #ffae00;
+    width: 20%;
+    display: block;
 
+}
 
-
+.alert {
+    background-color: #c60f13;
+}
 
 
 
@@ -172,9 +149,9 @@ header h1 {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
 
 }
 
