@@ -1,0 +1,42 @@
+.box1, .box2, .box3, .box4, .box5 {
+    height: 100px;
+    width: 100px;
+    float: left;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.box1 {
+    background-color: red;
+    color: white;
+}
+
+.box2 {
+    background-color: yellow;
+    color: black;
+}
+
+.box3 {
+    background-color: green;
+    color: white;
+}
+
+.box4 {
+    background-color: blue;
+    color: white;
+}
+
+.box5 {
+    background-color: orange;
+    color: white;
+}
+
+.headings{
+    display: block;
+
+}
+
+.clear{
+    clear: both;
+
+}

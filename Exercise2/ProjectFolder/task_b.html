@@ -1,0 +1,40 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task B</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="task_a_style.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<h1>Form validation JavaScript</h1>
+<form novalidate onsubmit="return validation()">
+    <div id="form_div">
+        <fieldset>
+            <legend>Personal Information:</legend>
+            <div id="input_div">
+                <input class="form_input" id="firstname" type="text" name="firstname" placeholder="First Name">
+                <input class="form_input" id="lastname" type="text" name="lastname" placeholder="Last Name">
+                <input class="form_input" id="email" type="text" name="email" placeholder="Email">
+                <input class="form_input" id="phoneNumber" type="text" name="phoneNumber"
+                       placeholder="Phone (+358123456789)">
+                <input class="form_input" id="address" type="text" name="address" placeholder="Address">
+                <input class="form_input" id="postCode" type="text" name="postCode" placeholder="Post Code">
+                <input class="form_input" id="password" type="password" name="password" placeholder="Password">
+                <input class="button" id="submit_button" type="submit" value="Submit">
+                <input class="button" id="reset_button" type="reset" value="Reset">
+            </div>
+        </fieldset>
+    </div>
+</form>
+</body>
+</html>
