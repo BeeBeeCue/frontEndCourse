@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul class="fruits">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li data-foodtype="squishy">Orange</li>
+    <li>Pear</li>
+    <li>Kiwi</li>
+    <li id="berry">Strawberry</li>
+</ul>
+<style>
+    li[id='berry'] {
+        background-color: red;
+    }
+
+    li[data-foodtype='squishy'] {
+        background-color: orange;
+    }
+
+</style>
+<script>
+    'use strict';
+    console.log(document.getElementById('berry'));
+    console.log('I found the berry: ' + document.getElementById('berry').innerHTML);
+
+    console.log(document.querySelector('li:nth-child(3)'));
+    console.log('I found the fruit: ' + document.querySelector('[data-foodtype=squishy]').innerHTML);
+
+    console.log(document.getElementsByTagName('li'));
+
+
+    const x = document.getElementsByTagName('li')[0].innerHTML;
+    const test = document.querySelectorAll('li');
+    let i = 0;
+    for (i; i <= x.length; i++) {
+        console.log(test[i].innerHTML);
+        document.querySelector('li:nth-child(4)').style.backgroundColor = 'green';
+        test[i].style.width = '100px';
+        test[i].style.listStyleType = 'none';
+    }
+
+    console.log(document.querySelectorAll('li'));
+
+    test.forEach((li) => {
+        li.style.border = '1px solid black'
+    });
+
+</script>
+</body>
+</html>
